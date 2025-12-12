@@ -27,7 +27,7 @@ The game utilizes a "Concept-First" approach to introduce complex technical topi
 
 -----
 
-## ⚖️ Design Philosophy: Myth vs. Reality
+## Design Philosophy: Myth vs. Reality
 
 To ensure **CyberSect** promotes ethical and accurate security practices, we actively address common media tropes through game mechanics:
 
