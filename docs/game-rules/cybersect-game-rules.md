@@ -1,17 +1,9 @@
-That is a great design pivot. Making **Rare cards un-upgradeable** is a fantastic balancing mechanic—it means Rares are powerful "out of the box," but Common cards can eventually rival them if you invest enough resources. It gives the player a reason to keep their starter cards.
+# CyberSect – Game Rules
 
-Regarding the **Attack Cards**: You are right. If we want to lean into the "Cybersecurity Simulation," attacks *should* also rely on knowing your enemy. We will change the rule so that **ANY card** (Attack or Utility) can have a "Signature Bonus" vs specific enemies.
-
-Here is the **Finalized Game Rules (v5.0)** with the reduced status effects, the new upgrade logic, and the specialized attack system.
-
-***
-
-# 🎯 CyberSect – Rules of Engagement (v5.0)
-
-## 🎮 1. Core Concept
+## 1. Core Concept
 **CyberSect** is a single-player, turn-based card game where you play as a **Blue Team Operator** defending a network. You mitigate threats (Malware) using a deck of **Protocols** (Cards).
 
-## 📖 2. The Operational Loop
+## 2. The Operational Loop
 1.  **Monitor:** Select a compromised node (Level) on the Map.
 2.  **Engage:** Battle waves of malware (Standard: 2 Waves | Boss: 3-4 Waves).
 3.  **Remediate:** Reduce Enemy Integrity (HP) to 0 while protecting System Stability (Player HP).
@@ -19,13 +11,13 @@ Here is the **Finalized Game Rules (v5.0)** with the reduced status effects, the
 5.  **Patch:** Spend CP at the **Repository (Shop)** to buy cards or upgrade existing ones.
 6.  **Certify:** Defeating Chapter Bosses unlocks new **Job Specializations**.
 
-## 👤 3. Operator Progression (Classes)
+## 3. Operator Progression (Classes)
 * **Tier 1: Script Kiddie (Rookie):** Balanced starter stats.
 * **Tier 2: Firewall Guardian:** Focuses on Defense (Shields).
 * **Tier 2: Antivirus Specialist:** Focuses on Offense (Attacks).
 * **Tier 2: Ethical Hacker:** Focuses on Utility (Control/Debuffs).
 
-## 🃏 4. Card Architecture
+## 4. Card Architecture
 All cards cost **RAM** (Energy) to use. Cards are divided by function, but **any card** can have a specialized effect.
 
 ### **Functional Types**
@@ -42,20 +34,20 @@ All cards cost **RAM** (Energy) to use. Cards are divided by function, but **any
     * *Example Defense:* **"Traffic Shaper"** (Shield 5. **If DDoS:** Shield 25).
     * *Example Utility:* **"Decryption Tool"** (Heal 5 HP. **If Ransomware:** Remove "Lock" Status).
 
-## ⚡ 5. Runtime (Turn Structure)
+## 5. Runtime (Turn Structure)
 1.  **Fetch Phase:** Draw 2 cards (Hand limit: 10).
 2.  **Allocation Phase:** Gain **RAM** (Refills to max, usually 3-4).
 3.  **Execute Phase:** Play cards.
 4.  **Intrusion Phase:** Enemy attacks/actions occur.
 5.  **Garbage Collection:** Start/End of turn effects resolve (Poison/Stun).
 
-## ⚔️ 6. Defense Metrics
+## 6. Defense Metrics
 * **Integrity (Health):** Reaching 0 causes a System Crash (Level Fail).
 * **Firewall (Shield):** Temporary hit points. Blocks damage. Resets to 0 at the start of your turn.
 * **RAM (Energy):** Resource to play cards.
 * **Throttling:** In Boss battles, reshuffling your deck causes Overheating (-5 Integrity).
 
-## 🔮 7. Status Conditions (Simplified)
+## 7. Status Conditions (Simplified)
 We focus only on the critical network states.
 
 | Icon | Name | Effect |
@@ -65,7 +57,7 @@ We focus only on the critical network states.
 | 🔒 | **Encrypted (Lock)** | Player cannot use a specific card for X turns. |
 | 🛡️ | **Firewall (Shield)** | Absorbs incoming damage. |
 
-## 📦 8. Loot & Economy
+## 8. Loot & Economy
 
 ### **Clearance Levels (Drop Rates)**
 * **Standard Enemies:** High chance of **Common**. Low chance of **Uncommon**.
@@ -76,7 +68,7 @@ We focus only on the critical network states.
 Sells cards for **Cyber Points (CP)**. Inventory improves as you advance Chapters.
 * **Stock:** 5 Cards + Upgrade Station.
 
-## ⬆️ 9. Upgrade System ("Patch Management")
+## 9. Upgrade System ("Patch Management")
 Upgrading cards improves their stats (Damage/Shield) or lowers their RAM cost. However, hardware has limits.
 
 | Rarity | Upgrade Limit | Logic |
@@ -85,8 +77,6 @@ Upgrading cards improves their stats (Damage/Shield) or lowers their RAM cost. H
 | **Uncommon** | **Max Level 2** (Upgrade 1 time) | Specialized tools with one optimized version. |
 | **Rare** | **Max Level 1** (No Upgrades) | Enterprise tools. Powerful immediately, but static. |
 
-
-
-## 📚 10. The CyberDex
+## 10. The CyberDex
 * **In-Game Database:** Unlocks entries for every Enemy and Card encountered.
 * **Content:** Contains the **Game Rule** and the **Real World Definition** (sourced from NIST/MITRE).
