@@ -3,7 +3,7 @@
 ## **PROLOGUE: The Breach**
 * **The Incident:** Inside the server room, chaos ensues. The **CEO** demands a plain-English explanation for the failure.
 * **The Diagnosis:** The **CIO** explains they haven't just been hacked; they have suffered a **Total System Compromise**. The attacker has **Root Access**, meaning traditional remote fixes are impossible.
-* **The Solution:** The CIO recruits a specialist—the **Operator/White Hat Hacker**.
+* **The Solution:** The CIO recruits a specialist—the **Agent White**.
 * **The Entry:** The Operator/White Hat uses an experimental **EEG Neural Link** (a metaphor for Deep Packet Inspection) to physically project his consciousness into the code.
 * **Transition:** A bolt of lightning strikes the interface. The Operator/White Hat materializes in the **Corrupted Server World**.
 * **Closing Line:** *"I’m in."*
