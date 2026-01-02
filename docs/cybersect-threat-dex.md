@@ -1,4 +1,4 @@
-# 👾 CyberSect: The Complete Threat Database
+# 👾 CyberSect: Threat Database
 
 ## 🔑 Class Legend
 
