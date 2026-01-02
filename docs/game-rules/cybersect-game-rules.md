@@ -7,7 +7,7 @@
 1.  **Monitor:** Select a compromised node (Level) on the Map.
 2.  **Engage:** Battle waves of malware (Standard: 2 Waves | Boss: 3-4 Waves).
 3.  **Remediate:** Reduce Enemy Integrity (HP) to 0 while protecting System Stability (Player HP).
-4.  **Analyze:** Victory grants **Cyber Points (CP)** and Data Logs (Card Rewards).
+4.  **Analyze:** Victory grants **Cyber Points (CP)** and **Data Logs (Card Rewards)**.
 5.  **Patch:** Spend CP at the **Repository (Shop)** to buy cards or upgrade existing ones.
 6.  **Certify:** Defeating Chapter Bosses unlocks new **Job Specializations**.
 
@@ -37,46 +37,97 @@ All cards cost **RAM** (Energy) to use. Cards are divided by function, but **any
 ## 5. Runtime (Turn Structure)
 1.  **Fetch Phase:** Draw 2 cards (Hand limit: 10).
 2.  **Allocation Phase:** Gain **RAM** (Refills to max, usually 3-4).
+* *Rookie/Engineer/Hunter:* Refill to 3 RAM.
+* *Pen Tester:* Refill to 4 RAM.
 3.  **Execute Phase:** Play cards.
 4.  **Intrusion Phase:** Enemy attacks/actions occur.
 5.  **Garbage Collection:** Start/End of turn effects resolve (Poison/Stun).
 
 ## 6. Defense Metrics
-* **Integrity (Health):** Reaching 0 causes a System Crash (Level Fail).
-* **Firewall (Shield):** Temporary hit points. Blocks damage. Resets to 0 at the start of your turn.
+
+* **Integrity (Health):** If 0, System Crash (Restart Level).
+* **Firewall (Shield):** Temporary HP. Resets to 0 at start of turn.
 * **RAM (Energy):** Resource to play cards.
-* **Throttling:** In Boss battles, reshuffling your deck causes Overheating (-5 Integrity).
+* **Throttling:** In Boss battles, reshuffling deck causes Overheating (-5 Integrity).
 
-## 7. Status Conditions (Simplified)
-We focus only on the critical network states.
+## 7. Loot & Drop Rates
 
-| Icon | Name | Effect |
-| :--- | :--- | :--- |
-| 💤 | **Latency (Stun)** | Target cannot act next turn. |
-| 🦠 | **Memory Leak (Poison)** | Target loses X Integrity at the start of their turn. |
-| 🔒 | **Encrypted (Lock)** | Player cannot use a specific card for X turns. |
-| 🛡️ | **Firewall (Shield)** | Absorbs incoming damage. |
+After winning a battle, the enemy drops a **Data Log** (Card Reward). The quality depends on the enemy Tier.
 
-## 8. Loot & Economy
+**Standard Enemies:**
+* 40% Common Card
+* 10% Uncommon Card
+* 50% No Card (CP Only)
 
-### **Clearance Levels (Drop Rates)**
-* **Standard Enemies:** High chance of **Common**. Low chance of **Uncommon**.
-* **Mini-Bosses:** Guaranteed **Uncommon** choice. Small chance of **Rare**.
-* **Chapter Bosses:** Guaranteed **Rare** choice.
 
-### **The Repository (Shop)**
-Sells cards for **Cyber Points (CP)**. Inventory improves as you advance Chapters.
-* **Stock:** 5 Cards + Upgrade Station.
+**Mini-Bosses:**
+* 100% Uncommon Card Choice (Pick 1 of 3)
+
+
+**Chapter Bosses:**
+* 100% Rare Card Choice (Pick 1 of 3)
+
+
+
+## 8. The Repository (Shop & Economy)
+
+**Stock:**
+Sells 5 Random Cards + Upgrade Station.
+Inventory quality increases as you reach higher Chapters.
+
+**Purchasability:**
+
+* Common Card: 50 CP
+* Uncommon Card: 120 CP
+* Rare Card: 300 CP
 
 ## 9. Upgrade System ("Patch Management")
-Upgrading cards improves their stats (Damage/Shield) or lowers their RAM cost. However, hardware has limits.
+
+To upgrade a card, you must visit the Repository. You need **Duplicate Copies** of that specific card plus **Cyber Points (CP)** to compile the patch.
+
+### **Upgrade Logic by Rarity**
 
 | Rarity | Upgrade Limit | Logic |
-| :--- | :--- | :--- |
-| **Common** | **Max Level 3** (Upgrade 2 times) | Highly customizable generic scripts. |
-| **Uncommon** | **Max Level 2** (Upgrade 1 time) | Specialized tools with one optimized version. |
-| **Rare** | **Max Level 1** (No Upgrades) | Enterprise tools. Powerful immediately, but static. |
+| --- | --- | --- |
+| **Common** | **Max Level 3** (Upgrade 2 times) | Highly customizable. Starts weak, but has high potential if you farm duplicates. |
+| **Uncommon** | **Max Level 2** (Upgrade 1 time) | Specialized tools. Can be optimized once for better efficiency. |
+| **Rare** | **Max Level 1** (No Upgrades) | Enterprise-grade/Proprietary. Powerful out of the box, but code is "Read-Only." |
 
-## 10. The CyberDex
-* **In-Game Database:** Unlocks entries for every Enemy and Card encountered.
-* **Content:** Contains the **Game Rule** and the **Real World Definition** (sourced from NIST/MITRE).
+### **Upgrade Costs & Requirements**
+
+**Common Cards**
+
+* **v1.0  v2.0:** Requires **2 Duplicates** + **50 CP**.
+* **v2.0  v3.0 (Max):** Requires **3 Duplicates** + **100 CP**.
+* *Effect:* Significant stat increase (e.g., Attack 20  30  45).
+
+**Uncommon Cards**
+
+* **v1.0  v2.0 (Max):** Requires **2 Duplicates** + **150 CP**.
+* *Effect:* Cost reduction OR added utility (e.g., Cost 2 RAM  Cost 1 RAM).
+
+**Rare Cards**
+
+* **Status:** **Legacy Code / Closed Source**.
+* *Effect:* Cannot be upgraded.
+
+## 10. The CyberDex (Source of Definitions)
+
+The in-game encyclopedia.
+
+**Content:**
+Every Card and Enemy has an entry explaining its Game Function and Real World Definition.
+
+**Primary Sources:**
+All definitions are sourced from:
+
+1. **NIST (National Institute of Standards and Technology)** - CSRC Glossary.
+2. **MITRE ATT&CK Framework** - Tactics and Techniques.
+3. **CISA (Cybersecurity and Infrastructure Security Agency)** - Common Vulnerabilities.
+
+**Example Entry:**
+
+* **Game Term:** "Phishing"
+* **Game Effect:** Enemy masquerades as a friendly card.
+* **Definition:** "A technique for attempting to acquire sensitive data, such as bank account numbers, through a fraudulent solicitation in email or on a web site."
+* **Source:** [NIST SP 800-83 Rev. 1]
