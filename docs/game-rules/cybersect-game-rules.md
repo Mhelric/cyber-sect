@@ -1,133 +1,126 @@
-# CyberSect – Game Rules
+# 🎯 CyberSect – Official Game Rules
 
 ## 1. Core Concept
-**CyberSect** is a single-player, turn-based card game where you play as a **Blue Team Operator** defending a network. You mitigate threats (Malware) using a deck of **Protocols** (Cards).
 
-## 2. The Operational Loop
-1.  **Monitor:** Select a compromised node (Level) on the Map.
-2.  **Engage:** Battle waves of malware (Standard: 2 Waves | Boss: 3-4 Waves).
-3.  **Remediate:** Reduce Enemy Integrity (HP) to 0 while protecting System Stability (Player HP).
-4.  **Analyze:** Victory grants **Cyber Points (CP)** and **Data Logs (Card Rewards)**.
-5.  **Patch:** Spend CP at the **Repository (Shop)** to buy cards or upgrade existing ones.
-6.  **Certify:** Defeating Chapter Bosses unlocks new **Job Specializations**.
+**CyberSect** is a single-player, turn-based card game. You play as a **Blue Team Operator** (a cybersecurity student) defending your school's network. You battle viruses and hackers using a deck of **Protocols** (Cards) representing real-world security tools.
+
+## 2. The Operational Loop (How to Play)
+
+1. **Monitor:** Select a compromised node (Level) on the Overworld Map.
+2. **Engage:** Enter the level and battle waves of malware using your deck.
+3. **Remediate:** Reduce the Enemy's HP to 0 while protecting your own.
+4. **Analyze:** Winning rewards you with **Cyber Points (CP)** and **Data Logs** (New Cards).
+5. **Patch:** Visit the **Repository (Shop)** between levels to buy or upgrade cards using CP.
+6. **Certify:** Defeat Chapter Bosses to unlock new **Job Classes**.
 
 ## 3. Operator Progression (Classes)
-* **Tier 1: Script Kiddie (Rookie):** Balanced starter stats.
-* **Tier 2: Firewall Guardian:** Focuses on Defense (Shields).
-* **Tier 2: Antivirus Specialist:** Focuses on Offense (Attacks).
-* **Tier 2: Ethical Hacker:** Focuses on Utility (Control/Debuffs).
 
-## 4. Card Architecture
-All cards cost **RAM** (Energy) to use. Cards are divided by function, but **any card** can have a specialized effect.
+You start as a Rookie. Defeating Bosses unlocks specialized roles. You may **switch your Class** between levels on the Map Screen.
 
-### **Functional Types**
-* 🗡️ **Execute (Attack):** Deals damage to Enemy Integrity.
-* 🛡️ **Harden (Defense):** Grants **Firewall** (Shield) points.
+* **Tier 1: Script Kiddie (Rookie):** Balanced starter class.
+* **Tier 2: Network Engineer (Defense):** Focuses on Shields and Sustainability.
+* **Tier 2: Threat Hunter (Attack):** Focuses on High Damage and Aggression.
+* **Tier 3: Pen Tester (Control):** Focuses on Traps and Exploiting Enemy Weakness.
+
+## 4. Deck Architecture
+
+* **Starter Deck:** 15 Cards (Rookie Layout).
+* **Class Decks:** 10 Core Cards (Locked) + 5 Flex Slots (Customizable).
+* **Hand Size:** Max 10 Cards.
+
+### Card Types
+
+* 🗡️ **Execute (Attack):** Deals damage to Enemy HP.
+* 🛡️ **Harden (Defense):** Grants **Shield** to block damage.
 * 🔧 **Patch (Utility):** Heals, draws cards, or applies Status Effects.
 
-### **The "Signature Match" Mechanic**
-**Attack, Defense, and Utility** cards can all have a **Condition**.
+### The "Signature Match" Mechanic
 
-* **Generic Cards:** Reliable, mid-range effects that work on everyone. (e.g., "Deal 10 Damage").
-* **Specialized Cards:** Have a **Weaker Base Effect** but a **Powerful Bonus** if the target matches a specific malware type.
-    * *Example Attack:* **"Deep Clean"** (Deal 5 Dmg. **If Worm:** Deal 25 Dmg).
-    * *Example Defense:* **"Traffic Shaper"** (Shield 5. **If DDoS:** Shield 25).
-    * *Example Utility:* **"Decryption Tool"** (Heal 5 HP. **If Ransomware:** Remove "Lock" Status).
+Some cards are **Specialized**. They have a weaker base effect, but trigger a **Powerful Bonus** if the target matches a specific malware type.
 
-## 5. Runtime (Turn Structure)
-1.  **Fetch Phase:** Draw 2 cards (Hand limit: 10).
-2.  **Allocation Phase:** Gain **RAM** (Refills to max, usually 3-4).
-* *Rookie/Engineer/Hunter:* Refill to 3 RAM.
-* *Pen Tester:* Refill to 4 RAM.
-3.  **Execute Phase:** Play cards.
-4.  **Intrusion Phase:** Enemy attacks/actions occur.
-5.  **Garbage Collection:** Start/End of turn effects resolve (Poison/Stun).
+* *Example:* **"Deep Clean"** deals 5 Damage normally, but **25 Damage** if the target is a **Worm**.
 
-## 6. Defense Metrics
+### Card Limits & Duplication
+We utilize a "Soft Cap" system to balance deck building.
 
-* **Integrity (Health):** If 0, System Crash (Restart Level).
-* **Firewall (Shield):** Temporary HP. Resets to 0 at start of turn.
-* **RAM (Energy):** Resource to play cards.
-* **Throttling:** In Boss battles, reshuffling deck causes Overheating (-5 Integrity).
+* **Common / Uncommon Cards:** **Unlimited Copies.**
+    * You may stack as many copies of these cards as you wish.
+    * *Balancing Rule:* Shop prices increase for each duplicate you already own (+50% CP cost per copy).
+* **Rare (Ultimate) Cards:** **Unique (Limit 1).**
+    * Powerful cards (e.g., *Air Gap*, *System Restore Point*) are limited to **1 copy per deck** to prevent infinite stalling or game-breaking loops.
 
-## 7. Loot & Drop Rates
+## 5. Turn Structure
 
-After winning a battle, the enemy drops a **Data Log** (Card Reward). The quality depends on the enemy Tier.
-
-**Standard Enemies:**
-* 40% Common Card
-* 10% Uncommon Card
-* 50% No Card (CP Only)
+1. **Draw Phase:** Draw 2 cards. (Skip if hand is full at 10 cards).
+2. **Energy Phase:** Refill **RAM** (Energy).
+* *Rookie/Engineer/Hunter:* 3 RAM.
+* *Pen Tester:* 4 RAM.
 
 
-**Mini-Bosses:**
-* 100% Uncommon Card Choice (Pick 1 of 3)
+3. **Action Phase:** Play cards by spending RAM.
+4. **Intrusion Phase:** Enemy executes their script (Attack/Buff).
+5. **Status Phase:** Start/End of turn effects resolve (Poison, Stun).
 
+## 6. Combat Metrics & Rules
 
-**Chapter Bosses:**
-* 100% Rare Card Choice (Pick 1 of 3)
+* **Integrity (Health):** Pure numbers. If 0, you lose the level.
+* **Firewall (Shield):** Blocks incoming damage. Resets to 0 at the start of your turn.
+* **RAM (Energy):** The resource cost to play cards.
+* **Reshuffle Rule:** When your draw pile is empty, your discard pile is shuffled into a new deck.
+* **⚠️ Boss Fatigue:** In Boss battles, every time you Reshuffle, you take **Overheat Damage** (-5 HP, then -10, -15...). This prevents stalling.
 
+## 7. Status Effects
 
+**🔴 Negative (From Enemies)**
+
+* **Stun:** You lose your next turn.
+* **Locked:** A specific card in your hand cannot be played for X turns.
+* **Fragile:** You take +50% damage from attacks.
+
+**🟢 Positive (From Player)**
+
+* **Blocking:** Prevents the next X negative status effects.
+* **Disabled:** The Enemy cannot use their special ability next turn.
 
 ## 8. The Repository (Shop & Economy)
 
-**Stock:**
-Sells 5 Random Cards + Upgrade Station.
-Inventory quality increases as you reach higher Chapters.
+Spend **Cyber Points (CP)** earned from battles to improve your deck.
 
-**Purchasability:**
-
+* **Stock:** 5 Random Cards + Upgrade Station.
+* **Costs:**
 * Common Card: 50 CP
 * Uncommon Card: 120 CP
 * Rare Card: 300 CP
 
+
+
 ## 9. Upgrade System ("Patch Management")
 
-To upgrade a card, you must visit the Repository. You need **Duplicate Copies** of that specific card plus **Cyber Points (CP)** to compile the patch.
+To upgrade a card, you need **Duplicate Copies** of that card plus **CP**.
 
-### **Upgrade Logic by Rarity**
+* **Common Cards:** Upgrade up to Level 3. (Highly customizable).
+* **Uncommon Cards:** Upgrade up to Level 2. (Optimized efficiency).
+* **Rare Cards:** **Read-Only.** (Cannot be upgraded).
 
-| Rarity | Upgrade Limit | Logic |
-| --- | --- | --- |
-| **Common** | **Max Level 3** (Upgrade 2 times) | Highly customizable. Starts weak, but has high potential if you farm duplicates. |
-| **Uncommon** | **Max Level 2** (Upgrade 1 time) | Specialized tools. Can be optimized once for better efficiency. |
-| **Rare** | **Max Level 1** (No Upgrades) | Enterprise-grade/Proprietary. Powerful out of the box, but code is "Read-Only." |
+## 10. Loot & Drop Rates
 
-### **Upgrade Costs & Requirements**
+After winning a battle, the enemy drops a **Data Log** (Card Reward).
 
-**Common Cards**
+* **Standard Enemies:** 40% Common, 10% Uncommon, 50% No Card (CP only).
+* **Mini-Bosses:** 100% Uncommon Card Choice (Pick 1 of 3).
+* **Chapter Bosses:** 100% Rare Card Choice (Pick 1 of 3).
 
-* **v1.0  v2.0:** Requires **2 Duplicates** + **50 CP**.
-* **v2.0  v3.0 (Max):** Requires **3 Duplicates** + **100 CP**.
-* *Effect:* Significant stat increase (e.g., Attack 20  30  45).
+## 11. Victory & Defeat
 
-**Uncommon Cards**
+* **Level Victory:** Defeat all enemies  Get Rewards.
+* **Chapter Victory:** Defeat the Boss  Unlock new Class.
+* **Defeat:** HP reaches 0  Restart Level.
+* **Infinite Retries:** There is no "Game Over." You can retry a level as many times as needed.
 
-* **v1.0  v2.0 (Max):** Requires **2 Duplicates** + **150 CP**.
-* *Effect:* Cost reduction OR added utility (e.g., Cost 2 RAM  Cost 1 RAM).
+## 12. The CyberDex
 
-**Rare Cards**
+The in-game encyclopedia. Every card and enemy includes a **Real World Definition** sourced from industry standards (NIST, MITRE, CISA).
 
-* **Status:** **Legacy Code / Closed Source**.
-* *Effect:* Cannot be upgraded.
-
-## 10. The CyberDex (Source of Definitions)
-
-The in-game encyclopedia.
-
-**Content:**
-Every Card and Enemy has an entry explaining its Game Function and Real World Definition.
-
-**Primary Sources:**
-All definitions are sourced from:
-
-1. **NIST (National Institute of Standards and Technology)** - CSRC Glossary.
-2. **MITRE ATT&CK Framework** - Tactics and Techniques.
-3. **CISA (Cybersecurity and Infrastructure Security Agency)** - Common Vulnerabilities.
-
-**Example Entry:**
-
-* **Game Term:** "Phishing"
-* **Game Effect:** Enemy masquerades as a friendly card.
-* **Definition:** "A technique for attempting to acquire sensitive data, such as bank account numbers, through a fraudulent solicitation in email or on a web site."
-* **Source:** [NIST SP 800-83 Rev. 1]
+* *Example:* **"Phishing"**
+* **Game Effect:** Enemy traps you into clicking a fake link.
+* **Real World Definition:** "A technique for attempting to acquire sensitive data through a fraudulent solicitation in email or on a web site." [NIST SP 800-83]
