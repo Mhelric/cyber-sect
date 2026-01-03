@@ -1,5 +1,15 @@
 # 👾 Threat Classifications (Enemy Profiles)
 
+## 🎨 Visual Identification Guide (Color Coding)
+To assist Operators in rapid threat identification, all enemies follow this color schema:
+
+* 🔴 **MALWARE (Red Borders):** Weak vs Attack Cards. (Represents Danger/Heat).
+* 🔵 **NETWORK (Blue Borders):** Weak vs Defense Cards. (Represents Cold/Static).
+* 🟣 **SOCIAL (Purple Borders):** Weak vs Utility Cards. (Represents Mystery/Deception).
+* ⚫ **CRYPTO (Black/Gold Borders):** Weak vs Decryption. (Represents Locked/High Value).
+
+---
+
 ## 🦠 Malware (The Code Breakers)
 
 **Threat Level:** Standard / Common

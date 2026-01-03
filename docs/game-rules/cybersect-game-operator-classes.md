@@ -65,16 +65,16 @@ The first time you defeat an enemy each battle, gain **+1 Energy (RAM)** on your
 **Unlock Condition:** Defeat Chapter 3 Boss.
 
 **Stats:**
-HP: 90 (Low) | Energy (RAM): 4 (High) | Draw: 2
+HP: 90 (Low) | Energy (RAM): 3 | Draw: 3 (High)
 
 **Role:**
-Controller. Disrupts enemy logic, drains resources, and uses complex exploits.
+Controller. High hand-size allows for complex combos, but requires careful energy management.
 
 **Unique Ability: Backtrace**
 The first time you play a Utility card each turn, apply **1 Weakness** to enemy (next attack deals 50% less damage).
 *Cyber Concept:* Represents "Attribution"—identifying and limiting the attacker's capability to hide or strike back.
 
-**Class Strategy:** "The Controller (Red Team)." This is an Advanced Class. While the Blue Team (Defenders) waits for attacks, the Pen Tester (Red Team) thinks like a hacker to beat them. They use High Cost / High Impact cards to disrupt enemy logic, steal resources, and break through invulnerable shields.
+**Class Strategy:** "The Controller." Unlike the brute force classes, the Pen Tester relies on having more options (Cards) in hand than anyone else. They use "Free" (0 Cost) cards and "Exhaust" mechanics to thin their deck and find the perfect answer to every threat.
 
 **Signature Match Focus:** Extremely effective against 🎭 Social Class (Phishing) and 🔒 Crypto Class (Ransomware).
 

@@ -137,7 +137,7 @@
 * **Category:** [Specialized] (Target: Social)
 * **Rarity:** Common
 * **Cost:** 1 RAM
-* **Base Effect:** Apply Weakness. If Social Class: Stun the target.
+* **Base Effect:** Apply Weakness. If Social Class: Stun the target and **Exhaust** (Remove from deck until next battle).
 * **Upgrade Path:**
 * v2.0: Apply 2 Weakness. If Social: Stun.
 * v3.0: Apply 2 Weakness & Draw 1. If Social: Stun.
@@ -170,7 +170,7 @@
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Common
 * **Cost:** 1 RAM
-* **Base Effect:** Deal 5 Damage. If Network Class: Stun the target.
+* **Base Effect:** Deal 5 Damage. If Network Class: Stun the target and **Exhaust** (Remove from deck until next battle).
 * **Upgrade Path:**
 * v2.0: Deal 8 Damage. If Network: Stun.
 * v3.0: Deal 11 Damage. If Network: Stun.
@@ -301,7 +301,7 @@
 * **Category:** [General]
 * **Rarity:** Uncommon
 * **Cost:** 2 RAM
-* **Base Effect:** Deal 8 Damage. Disable (Stun) target for 1 turn.
+* **Base Effect:** Deal 8 Damage. Disable (Stun) target for 1 turn. **Exhaust**.
 * **Upgrade Path:**
 * v2.0: Cost reduced to 1 RAM.
 

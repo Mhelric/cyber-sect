@@ -26,8 +26,9 @@
 * **Class:** 🌐 **Network**
 * **Role:** Disrupter
 * **HP:** 40 | **Dmg:** 0
-* **Behavior:** **Popup Spam.** Adds unplayable "Pop-Up" cards to your deck to clog your hand.
-* **📝 CyberDex:** "Software that automatically displays or downloads advertising material (often unwanted) when a user is online." [Source: CISA Security Tip ST04-016]
+* **Behavior:** **Popup Spam.** Shuffles "Pop-Up Window" cards into your draw pile.
+    * *Card: Pop-Up Window* (Cost: 1 RAM). Effect: Play this card to remove it from your hand. Take 2 Damage.
+* **📝 CyberDex:** "Software that automatically displays or downloads advertising material. It clutters resources until manually removed." [Source: CISA Security Tip ST04-016]
 
 ### 3. Trojan
 
