@@ -1,4 +1,4 @@
-# 👾 CyberSect: Card Database (Master Protocol Library)
+# 👾 CyberSect: Card Database (Master Protocol Library) v1.2
 
 * **[General]:** Reliable effects that work on any enemy.
 * **[Specialized]:** Cards that trigger a bonus effect if the target matches a specific **Class** (Signature Match).
@@ -15,12 +15,6 @@
 * **Common / Starter:** 24 Cards (53%)
 * **Uncommon:** 14 Cards (31%)
 * **Rare:** 7 Cards (16%)
-
-**Breakdown by Class Affinity:**
-* **Script Kiddie:** 11 Cards
-* **Network Engineer:** 12 Cards
-* **Threat Hunter:** 11 Cards
-* **Pen Tester:** 11 Cards
 
 ---
 
@@ -50,10 +44,10 @@
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Common
 * **Cost:** 2 RAM
-* **Base Effect:** Deal 8 Damage. If Network Class: Deal 16 Damage.
+* **Base Effect:** Deal 12 Damage. If Network Class: Deal 20 Damage and Exhaust.
 * **Upgrade Path:**
-    * v2.0: Deal 10 Damage (Bonus: 20).
-    * v3.0: Deal 12 Damage (Bonus: 24).
+    * v2.0: Deal 15 Damage (Bonus: 25).
+    * v3.0: Deal 18 Damage (Bonus: 30).
 * **CyberDex:** "Distributed Denial of Service: An attack that prevents authorized use of networks by exhausting resources." [NIST SP 800-61]
 
 **3. Signature Match**
@@ -66,7 +60,7 @@
     * v3.0: Deal 12 Damage (Bonus: 24).
 * **CyberDex:** "A recognizable pattern of data or signals that indicates a specific threat." [NIST CSRC]
 
-**4. Boot Scan** (New!)
+**4. Boot Scan**
 * **Category:** [Specialized] (Target: Malware)
 * **Rarity:** Common
 * **Cost:** 2 RAM
@@ -76,7 +70,7 @@
     * v3.0: Deal 35 Damage.
 * **CyberDex:** "A scan that runs at system startup to detect rootkits and malware before the OS loads." [NIST SP 800-83]
 
-**5. Spam Filter** (New!)
+**5. Spam Filter**
 * **Category:** [Specialized] (Target: Social)
 * **Rarity:** Uncommon
 * **Cost:** 1 RAM
@@ -110,12 +104,12 @@
 **8. Air Gap**
 * **Category:** [General]
 * **Rarity:** Rare
-* **Cost:** 3 RAM
-* **Base Effect:** Gain 20 Shield. You cannot play any more cards this turn.
+* **Cost:** 2 RAM
+* **Base Effect:** Gain 15 Shield. Gain +1 RAM next turn.
 * **Upgrade Path:** Read-Only (No Upgrades).
 * **CyberDex:** "Manual isolation. An interface between two systems at which they are not connected physically." [NIST CSRC]
 
-**9. Multi-Factor Auth (MFA)** (New!)
+**9. Multi-Factor Auth (MFA)**
 * **Category:** [Specialized] (Target: Social)
 * **Rarity:** Common
 * **Cost:** 1 RAM
@@ -150,10 +144,10 @@
 **12. Backup Recovery**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 2 RAM
-* **Base Effect:** Heal 10 HP. Remove 1 Debuff.
+* **Cost:** 1 RAM
+* **Base Effect:** Heal 5 HP. Remove 1 Debuff.
 * **Upgrade Path:**
-    * v2.0: Heal 15 HP. Remove 1 Debuff.
+    * v2.0: Heal 8 HP. Remove 1 Debuff.
 * **CyberDex:** "The copy of files and programs made to facilitate recovery, if necessary." [NIST SP 800-34]
 
 ---
@@ -176,11 +170,11 @@
 **14. Traffic Throttling**
 * **Category:** [General]
 * **Rarity:** Common
-* **Cost:** 2 RAM
+* **Cost:** 1 RAM
 * **Base Effect:** Deal Damage equal to current Shield amount.
 * **Upgrade Path:**
-    * v2.0: Cost reduced to 1 RAM.
-    * v3.0: Deal Damage equal to Shield + 5.
+    * v2.0: Deal Damage equal to Shield + 3.
+    * v3.0: Deal Damage equal to Shield + 6.
 * **CyberDex:** "The intentional slowing of an internet service to regulate network traffic and minimize congestion." [FCC Rules]
 
 **15. Sinkhole**
@@ -192,7 +186,7 @@
     * v2.0: Deal 10 Damage. Reflect 100% of damage.
 * **CyberDex:** "Redirecting malicious traffic to a specific server where it can be analyzed or discarded." [NIST SP 800-115]
 
-**16. Packet Filter** (New!)
+**16. Packet Filter**
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Common
 * **Cost:** 1 RAM
@@ -202,7 +196,7 @@
     * v3.0: Deal 12 Damage.
 * **CyberDex:** "A firewall technique used to control network access by monitoring outgoing and incoming packets." [NIST SP 800-41]
 
-**17. Flood Gate** (New!)
+**17. Flood Gate**
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Rare
 * **Cost:** 2 RAM
@@ -216,10 +210,10 @@
 * **Category:** [General]
 * **Rarity:** Common
 * **Cost:** 2 RAM
-* **Base Effect:** Gain 15 Shield.
+* **Base Effect:** Gain 12 Shield. Retain 1 card in your hand for next turn.
 * **Upgrade Path:**
-    * v2.0: Gain 20 Shield.
-    * v3.0: Gain 25 Shield.
+    * v2.0: Gain 16 Shield. Retain 1 card.
+    * v3.0: Gain 20 Shield. Retain 1 card.
 * **CyberDex:** "A list of permissions attached to an object, specifying which users are granted access." [NIST CSRC]
 
 **19. VPN Tunnel**
@@ -239,7 +233,7 @@
 * **Upgrade Path:** Read-Only (No Upgrades).
 * **CyberDex:** "A device that distributes network traffic across a number of servers to increase capacity." [CISA ST04-015]
 
-**21. Geo-Blocking** (New!)
+**21. Geo-Blocking**
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Uncommon
 * **Cost:** 1 RAM
@@ -253,10 +247,10 @@
 **22. Honeypot**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 2 RAM
-* **Base Effect:** Taunt. Gain 20 Temporary HP (Enemy attacks this instead of you).
+* **Cost:** 1 RAM
+* **Base Effect:** Taunt. Gain 12 Temporary HP (Enemy attacks this instead of you). Draw 1 Card.
 * **Upgrade Path:**
-    * v2.0: Taunt. Gain 30 Temporary HP.
+    * v2.0: Taunt. Gain 16 Temporary HP. Draw 1 Card.
 * **CyberDex:** "A system designed to be attractive to potential intruders, serving as a decoy." [NIST SP 800-83]
 
 **23. Packet Sniffer**
@@ -272,10 +266,229 @@
 **24. System Restore Point**
 * **Category:** [General]
 * **Rarity:** Rare
-* **Cost:** 3 RAM
-* **Base Effect:** Heal 25 HP. Exhaust (Remove from deck).
+* **Cost:** 0 RAM
+* **Base Effect:** Heal 15 HP. Exhaust (Remove from deck).
 * **Upgrade Path:** Read-Only (No Upgrades).
 * **CyberDex:** "A feature that allows users to revert their computer's state to that of a previous point in time." [NIST SP 800-34]
+
+---
+
+## 3. Threat Hunter Deck (Attack)
+**Theme:** Aggressive DPS / Malware Removal.
+
+### Attack Cards (Execute)
+
+**25. Heuristic Strike**
+* **Category:** [Specialized] (Target: Malware)
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Deal 10 Damage. If Malware Class: Deal 18 Damage.
+* **Upgrade Path:**
+    * v2.0: Deal 14 Damage (Bonus: 24).
+    * v3.0: Deal 18 Damage (Bonus: 30).
+* **CyberDex:** "Examining code for suspicious properties (heuristics) rather than looking for an exact signature match." [NIST SP 800-83]
+
+**26. Quarantine**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 2 RAM
+* **Base Effect:** Deal 8 Damage. Disable (Stun) target for 1 turn. Exhaust.
+* **Upgrade Path:**
+    * v2.0: Cost reduced to 1 RAM.
+* **CyberDex:** "The process of isolating files to prevent the spread of malicious software." [NIST SP 800-61]
+
+**27. Mass Purge**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 1 RAM
+* **Base Effect:** Deal 5 Damage to ALL enemies.
+* **Upgrade Path:**
+    * v2.0: Deal 8 Damage to ALL enemies.
+* **CyberDex:** "Sanitization: A process to render access to target data on the media infeasible." [NIST SP 800-88]
+
+### Defense Cards (Harden)
+
+**28. Sandbox Environment**
+* **Category:** [General]
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Gain 8 Shield. Draw 1 Card.
+* **Upgrade Path:**
+    * v2.0: Gain 11 Shield. Draw 1.
+    * v3.0: Gain 14 Shield. Draw 1.
+* **CyberDex:** "A restricted, controlled execution environment that prevents potentially malicious software from accessing system resources." [NIST SP 800-53]
+
+**29. Kill Switch**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 1 RAM
+* **Base Effect:** Gain 5 Shield. If shield is broken, deal 10 Damage back.
+* **Upgrade Path:**
+    * v2.0: Gain 5 Shield. If broken, deal 18 Damage back.
+* **CyberDex:** "A mechanism used to shut down or disable machinery or a program as quickly as possible." [CISA ICS Glossary]
+
+**30. Code Signing**
+* **Category:** [Specialized] (Target: Malware)
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Gain 5 Shield. If Malware: Gain 15 Shield.
+* **Upgrade Path:**
+    * v2.0: Gain 18 Shield.
+    * v3.0: Gain 21 Shield.
+* **CyberDex:** "Cryptographic technique to confirm the software author and guarantee the code has not been altered." [NIST CSRC]
+
+### Utility Cards (Patch)
+
+**31. Signature Update**
+* **Category:** [General]
+* **Rarity:** Rare
+* **Cost:** 2 RAM
+* **Base Effect:** Gain +3 Strength (All attacks deal +3 Damage) for the rest of the battle.
+* **Upgrade Path:** Read-Only (No Upgrades).
+* **CyberDex:** "The process of updating the database of known malware signatures." [NIST SP 800-83]
+
+**32. Decompile**
+* **Category:** [General]
+* **Rarity:** Common
+* **Cost:** 0 RAM
+* **Base Effect:** Apply 2 Vulnerable (Target takes +50% damage from next 2 hits).
+* **Upgrade Path:**
+    * v2.0: Apply 3 Vulnerable.
+    * v3.0: Apply 3 Vulnerable & Draw 1.
+* **CyberDex:** "The process of translating machine code back into source code to analyze the internal logic." [CISA Malware Analysis]
+
+**33. Threat Intelligence**
+* **Category:** [General]
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Scry 3 (Order top 3 cards). Gain 1 Energy.
+* **Upgrade Path:**
+    * v2.0: Scry 5. Gain 1 Energy.
+    * v3.0: Scry 5. Gain 2 Energy.
+* **CyberDex:** "Threat information that has been aggregated and analyzed to provide context for decision-making." [NIST SP 800-150]
+
+**34. Sample Submission**
+* **Category:** [Specialized] (Target: Malware)
+* **Rarity:** Uncommon
+* **Cost:** 0 RAM
+* **Base Effect:** Deal 5 Damage. If Malware: Gain 2 Energy.
+* **Upgrade Path:**
+    * v2.0: Gain 3 Energy.
+* **CyberDex:** "Sending suspicious files to a central authority or sandbox for automated analysis." [CISA Malware Analysis]
+
+---
+
+## 4. Pen Tester Deck (Control)
+**Theme:** High Cost / High Impact.
+
+### Attack Cards (Execute)
+
+**35. SQL Injection**
+* **Category:** [General] (Utility)
+* **Rarity:** Common
+* **Cost:** 2 RAM
+* **Base Effect:** Deal 12 Damage. Tag: Decryption (This attack ignores Shields).
+* **Upgrade Path:**
+    * v2.0: Deal 16 Damage. Decryption.
+    * v3.0: Deal 20 Damage. Decryption.
+* **CyberDex:** "An attack technique used to exploit websites that construct SQL statements from user-supplied input." [MITRE T1190]
+
+**36. Reverse Shell**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 2 RAM
+* **Base Effect:** Deal 10 Damage. Gain +2 Energy next turn.
+* **Upgrade Path:**
+    * v2.0: Deal 15 Damage. Gain +2 Energy next turn.
+* **CyberDex:** "A type of shell in which the target machine communicates back to the attacking machine." [CISA Malware Analysis]
+
+**37. Exploit Kit**
+* **Category:** [General] (Combo)
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Deal 6 Damage. If Target has Status Effect (Weak/Stun): Deal 14 Damage and Draw 1 Card.
+* **Upgrade Path:**
+    * v2.0: Deal 9 Damage (Bonus: 18 & Draw 1).
+    * v3.0: Deal 12 Damage (Bonus: 22 & Draw 1).
+* **CyberDex:** "A toolkit used by attackers to deliver a malicious payload by exploiting vulnerabilities." [NIST CSRC]
+
+**38. Brute Force**
+* **Category:** [Specialized] (Target: Crypto)
+* **Rarity:** Uncommon
+* **Cost:** 2 RAM
+* **Base Effect:** Deal 10 Damage. If Crypto: This attack Ignores Defense (Shield Pierce).
+* **Upgrade Path:**
+    * v2.0: Deal 15 Damage.
+* **CyberDex:** "An attack method involving an exhaustive procedure that tries all possibilities, one by one." [NIST CSRC]
+
+### Defense Cards (Harden)
+
+**39. Data Encryption**
+* **Category:** [Specialized] (Target: Social)
+* **Rarity:** Common
+* **Cost:** 2 RAM
+* **Base Effect:** Gain 10 Shield. If Social Class: Reflect all damage.
+* **Upgrade Path:**
+    * v2.0: Gain 15 Shield. If Social: Reflect.
+    * v3.0: Gain 20 Shield. If Social: Reflect.
+* **CyberDex:** "The process of transforming information using an algorithm to make it unreadable." [NIST SP 800-111]
+
+**40. IP Spoofing**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 1 RAM
+* **Base Effect:** Gain 5 Shield. Dodge the next attack (Take 0 Damage).
+* **Upgrade Path:**
+    * v2.0: Cost reduced to 0 RAM.
+* **CyberDex:** "The creation of Internet Protocol packets with a false source IP address." [NIST SP 800-61]
+
+**41. Cold Storage**
+* **Category:** [Specialized] (Target: Crypto)
+* **Rarity:** Rare
+* **Cost:** 2 RAM
+* **Base Effect:** Gain 15 Shield. If Crypto: Retain your Shield for the next turn.
+* **Upgrade Path:** Read-Only.
+* **CyberDex:** "An offline wallet or storage system used for storing sensitive data, inaccessible from the internet." [CISA Security Tip]
+
+### Utility Cards (Patch)
+
+**42. Decryption Key**
+* **Category:** [Specialized] (Target: Crypto)
+* **Rarity:** Common
+* **Cost:** 1 RAM
+* **Base Effect:** Deal 5 Damage. If Crypto Class: Remove all Shields and Lock effects.
+* **Upgrade Path:**
+    * v2.0: Deal 10 Damage. Remove Shields/Lock.
+    * v3.0: Deal 10 Damage. Remove Shields/Lock & Draw 1.
+* **CyberDex:** "A string of bits used by a cryptographic algorithm to transform encrypted data back into original data." [NIST SP 800-57]
+
+**43. Privilege Escalation**
+* **Category:** [General]
+* **Rarity:** Rare
+* **Cost:** 0 RAM
+* **Base Effect:** Lose 10 HP. Gain 2 Energy.
+* **Upgrade Path:** Read-Only (No Upgrades).
+* **CyberDex:** "Taking advantage of a bug or design flaw to gain elevated access to resources." [MITRE T1068]
+
+**44. Social Engineering Toolkit (SET)**
+* **Category:** [General]
+* **Rarity:** Uncommon
+* **Cost:** 2 RAM
+* **Base Effect:** Apply Confused (Enemy attacks itself next turn).
+* **Upgrade Path:**
+    * v2.0: Cost reduced to 1 RAM.
+* **CyberDex:** "An open-source penetration testing framework designed for social engineering attacks." [TrustedSec]
+
+**45. Awareness Training**
+* **Category:** [Specialized] (Target: Social)
+* **Rarity:** Common
+* **Cost:** 0 RAM
+* **Base Effect:** Gain 1 Energy. If Social: Apply 2 Vulnerable.
+* **Upgrade Path:**
+    * v2.0: Apply 3 Vulnerable.
+    * v3.0: Apply 3 Vulnerable & Draw 1.
+* **CyberDex:** "Formal education provided to users to help them identify and prevent social engineering attacks." [NIST SP 800-50]
+t their computer's state to that of a previous point in time." [NIST SP 800-34]
 
 ---
 
