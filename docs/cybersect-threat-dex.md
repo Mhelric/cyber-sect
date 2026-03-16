@@ -43,6 +43,7 @@
 * **Class:** 🦠 **Malware**
 * **Role:** **Chapter 1 Boss**
 * **HP:** 125
+* **Base Dmg:** 10 (Enrages to 15 Dmg if Shield is broken early).
 * **Behavior:** **Unpatched Vulnerability.** Starts with a massive **50 Shield**. You can either wait 3 turns for the shield to naturally decay to 0, *or* aggressively break the shield to expose its HP early.
 * **📝 CyberDex:** "An attack that targets a previously unknown vulnerability... meaning developers have had zero days to fix it." [Source: NIST SP 800-53]
 
@@ -81,6 +82,7 @@
 * **Class:** 🎭 **Social**
 * **Role:** **Chapter 2 Boss**
 * **HP:** 100
+* **Base Dmg:** 8. (Supplementary Dmg from "Fake Login" cards).
 * **Behavior:** **Impersonation.** Targets the highest-cost card in your hand and applies "Locked." You must pay 1 extra RAM to unlock and play it. Shuffles "Fake Login" (Take 2 Damage) cards into your draw pile.
 * **📝 CyberDex:** "A specific type of phishing attack that targets high-profile employees, such as the CEO or CFO." [Source: CISA Security Tip ST04-014]
 
@@ -119,6 +121,7 @@
 * **Class:** 🌐 **Network**
 * **Role:** **Chapter 3 Boss**
 * **HP:** 160
+* **Base Dmg:** 0. (Relies entirely on scaling damage from summoned Botnets).
 * **Behavior:** **Bot Herder.** Never attacks directly. Summons infinite Botnet Nodes. Invulnerable while Bots are alive.
 * **📝 CyberDex:** "Command and Control: A server controlled by an attacker to send commands to systems compromised by malware." [Source: MITRE ATT&CK: T1071]
 
@@ -149,6 +152,7 @@
 * **Class:** 🔄 **Variable** (Shapeshifter)
 * **Role:** **Chapter 4 Boss**
 * **HP:** 150
+* **Base Dmg:** 15.
 * **Behavior:** **Mutation.** Changes its Class Weakness every turn (Malware -> Network -> Crypto). Striking it with a card that *matches* its current weakness **refunds 1 RAM**.
 * **📝 CyberDex:** "Malware that changes its code signatures each time it runs to evade detection by traditional antivirus." [Source: NIST CSRC Glossary]
 
@@ -163,6 +167,9 @@
 * **Class:** 💀 **Omni-Class**
 * **Role:** **Final Boss**
 * **HP:** 250
+* **(Phase 1):** Dmg: 0 (Summons Swarm).
+* **(Phase 2):** Dmg: 15.
+* **(Phase 3):** Dmg: 0 (Counts down to 999).
 * **Behavior:** **The Kill Chain.**
 * **Phase 1:** Summons Botnets (Requires Crowd Control).
 * **Phase 2:** Locks Cards (Requires Decryption).
