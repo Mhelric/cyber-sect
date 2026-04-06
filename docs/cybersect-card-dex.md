@@ -170,7 +170,7 @@
 **14. Traffic Throttling**
 * **Category:** [General]
 * **Rarity:** Common
-* **Cost:** 1 RAM
+* **Cost:** 2 RAM
 * **Base Effect:** Deal Damage equal to current Shield amount.
 * **Upgrade Path:**
     * v2.0: Deal Damage equal to Shield + 3.
@@ -199,7 +199,7 @@
 **17. Flood Gate**
 * **Category:** [Specialized] (Target: Network)
 * **Rarity:** Rare
-* **Cost:** 2 RAM
+* **Cost:** 3 RAM
 * **Base Effect:** Deal 4 Damage to ALL enemies. If Network: Deal 12 Damage to ALL enemies.
 * **Upgrade Path:** Read-Only.
 * **CyberDex:** "A mechanism to control the volume of traffic allowed into a network segment to prevent congestion." [IETF RFC 4774]
@@ -219,7 +219,7 @@
 **19. VPN Tunnel**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 1 RAM
+* **Cost:** 2 RAM
 * **Base Effect:** Gain 8 Shield. Retain your hand (do not discard) for next turn.
 * **Upgrade Path:**
     * v2.0: Gain 12 Shield. Retain hand.
@@ -247,7 +247,7 @@
 **22. Honeypot**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 1 RAM
+* **Cost:** 2 RAM
 * **Base Effect:** Taunt. Gain 12 Temporary HP (Enemy attacks this instead of you). Draw 1 Card.
 * **Upgrade Path:**
     * v2.0: Taunt. Gain 16 Temporary HP. Draw 1 Card.
@@ -266,7 +266,7 @@
 **24. System Restore Point**
 * **Category:** [General]
 * **Rarity:** Rare
-* **Cost:** 0 RAM
+* **Cost:** 3 RAM
 * **Base Effect:** Heal 15 HP. Exhaust (Remove from deck).
 * **Upgrade Path:** Read-Only (No Upgrades).
 * **CyberDex:** "A feature that allows users to revert their computer's state to that of a previous point in time." [NIST SP 800-34]
@@ -291,16 +291,16 @@
 **26. Quarantine**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 2 RAM
+* **Cost:** 1 RAM
 * **Base Effect:** Deal 8 Damage. Disable (Stun) target for 1 turn. Exhaust.
 * **Upgrade Path:**
-    * v2.0: Cost reduced to 1 RAM.
+    * v2.0: Cost reduced to 0 RAM.
 * **CyberDex:** "The process of isolating files to prevent the spread of malicious software." [NIST SP 800-61]
 
 **27. Mass Purge**
 * **Category:** [General]
 * **Rarity:** Uncommon
-* **Cost:** 1 RAM
+* **Cost:** 2 RAM
 * **Base Effect:** Deal 5 Damage to ALL enemies.
 * **Upgrade Path:**
     * v2.0: Deal 8 Damage to ALL enemies.
