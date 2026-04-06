@@ -406,7 +406,7 @@
 * **Category:** [General] (Combo)
 * **Rarity:** Common
 * **Cost:** 1 RAM
-* **Base Effect:** Deal 6 Damage. If Target has Status Effect (Weak/Stun): Deal 14 Damage and Draw 1 Card.
+* **Base Effect:** Deal 6 Damage. If Target has Status Effect (Vulne/Stun): Deal 14 Damage and Draw 1 Card.
 * **Upgrade Path:**
     * v2.0: Deal 9 Damage (Bonus: 18 & Draw 1).
     * v3.0: Deal 12 Damage (Bonus: 22 & Draw 1).
@@ -416,7 +416,7 @@
 * **Category:** [Specialized] (Target: Crypto)
 * **Rarity:** Uncommon
 * **Cost:** 2 RAM
-* **Base Effect:** Deal 10 Damage. If Crypto: This attack Ignores Defense (Shield Pierce).
+* **Base Effect:** Deal 12 Damage.
 * **Upgrade Path:**
     * v2.0: Deal 15 Damage.
 * **CyberDex:** "An attack method involving an exhaustive procedure that tries all possibilities, one by one." [NIST CSRC]
@@ -446,7 +446,7 @@
 * **Category:** [Specialized] (Target: Crypto)
 * **Rarity:** Rare
 * **Cost:** 2 RAM
-* **Base Effect:** Gain 15 Shield. If Crypto: Retain your Shield for the next turn.
+* **Base Effect:** Gain 20 Shield.
 * **Upgrade Path:** Read-Only.
 * **CyberDex:** "An offline wallet or storage system used for storing sensitive data, inaccessible from the internet." [CISA Security Tip]
 
@@ -456,7 +456,7 @@
 * **Category:** [Specialized] (Target: Crypto)
 * **Rarity:** Common
 * **Cost:** 1 RAM
-* **Base Effect:** Deal 5 Damage. If Crypto Class: Remove all Shields and Lock effects.
+* **Base Effect:** Deal 5 Damage. Remove all Lock effects.
 * **Upgrade Path:**
     * v2.0: Deal 10 Damage. Remove Shields/Lock.
     * v3.0: Deal 10 Damage. Remove Shields/Lock & Draw 1.
@@ -474,7 +474,7 @@
 * **Category:** [General]
 * **Rarity:** Uncommon
 * **Cost:** 2 RAM
-* **Base Effect:** Apply Confused (Enemy attacks itself next turn).
+* **Base Effect:** Apply Stun.
 * **Upgrade Path:**
     * v2.0: Cost reduced to 1 RAM.
 * **CyberDex:** "An open-source penetration testing framework designed for social engineering attacks." [TrustedSec]
@@ -483,7 +483,7 @@
 * **Category:** [Specialized] (Target: Social)
 * **Rarity:** Common
 * **Cost:** 0 RAM
-* **Base Effect:** Gain 1 Energy. If Social: Apply 2 Vulnerable.
+* **Base Effect:** Gain 1 Energy. If Social: Apply 2 Vulnerable all enemies.
 * **Upgrade Path:**
     * v2.0: Apply 3 Vulnerable.
     * v3.0: Apply 3 Vulnerable & Draw 1.
