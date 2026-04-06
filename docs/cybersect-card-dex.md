@@ -250,7 +250,7 @@
 * **Cost:** 2 RAM
 * **Base Effect:** Taunt. Gain 12 Temporary HP (Enemy attacks this instead of you). Draw 1 Card.
 * **Upgrade Path:**
-    * v2.0: Taunt. Gain 16 Temporary HP. Draw 1 Card.
+    * v2.0: Gain 16 shield. Draw 1 Card.
 * **CyberDex:** "A system designed to be attractive to potential intruders, serving as a decoy." [NIST SP 800-83]
 
 **23. Packet Sniffer**
