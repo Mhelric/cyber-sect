@@ -38,7 +38,7 @@
 
 **4. Spam Filter**
 * **Category:** [Specialized] (Target: Social/Junk)
-* **Rarity:** Uncommon — *Upgrade: 5 Copies*
+* **Rarity:** Uncommon — *Upgrade: 2 Copies*
 * **Cost:** 1 RAM
 * **Base Effect:** Deal **10 Damage**. Exhaust all Status/Junk cards in hand; deal **+3 Damage** for each card removed.
 * **Upgrade Path:**
@@ -95,7 +95,7 @@
 
 **9. Backup Recovery**
 * **Category:** [General]
-* **Rarity:** Uncommon — *Upgrade: 5 Copies*
+* **Rarity:** Uncommon — *Upgrade: 2 Copies*
 * **Cost:** 1 RAM
 * **Base Effect:** **Heal 10 HP**.
 * **Upgrade Path:**
@@ -111,9 +111,9 @@
 | **Ping Command** | 2 | Common | 3 Copies |
 | **DDoS Script** | 2 | Common | 3 Copies |
 | **Signature Match** | 2 | Common | 3 Copies |
-| **Spam Filter** | 1 | Uncommon | 5 Copies |
+| **Spam Filter** | 1 | Uncommon | 2 Copies |
 | **Basic Firewall** | 3 | Common | 3 Copies |
 | **Patch Update** | 2 | Common | 3 Copies |
 | **WhoIs Lookup** | 1 | Common | 3 Copies |
 | **Force Quit** | 1 | Common | 3 Copies |
-| **Backup Recovery**| 1 | Uncommon | 5 Copies |
+| **Backup Recovery**| 1 | Uncommon | 2 Copies |
