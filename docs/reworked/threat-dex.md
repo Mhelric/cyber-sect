@@ -77,3 +77,66 @@
     * **Backup Recovery:** Crucial for recovering lost Integrity (HP) immediately after the Turn 3 Crash.
     * **Patch Update:** Builds shields while searching for the Signature Match finishers.
 * **📝 CyberDex:** "An attack that targets a previously unknown vulnerability... meaning developers have had zero days to fix it." [Source: NIST SP 800-53]
+
+---
+
+## 📂 **Chapter 2: The Human Layer (Social Engineering)**
+
+**Theme:** Deception, surveillance, and psychological manipulation.
+
+---
+
+### **1. Phishing Link**
+
+* **Class:** 🎭 **Social**
+* **Role:** The Decoy
+* **HP:** 25 | **Counter:** 25 Dmg
+* **Behavior:** **The Masquerade.** Starts as **"Unattackable"**. Standard attacks trigger **25 Counter Damage**. Shuffles **Malicious Link** junk cards into your deck every turn.
+* **Mitigation Cards:**
+    * **WhoIs Lookup:** Removes "Unattackable" status.
+    * **Spam Filter:** Exhausts **Malicious Link** cards from hand.
+    * **Awareness Training:** Instantly removes all Phishing Links and grants +1 Energy.
+* **📝 CyberDex:** "A digital attack that attempts to trick victims into giving up sensitive information by masquerading as a reputable entity." [Source: CISA]
+
+---
+
+### **2. The Keylogger**
+
+* **Class:** 🎭 **Social**
+* **Role:** The Silent Observer
+* **HP:** 65 | **Dmg:** 2 Per Card Played
+* **Behavior:** **Surveillance.** Passively monitors the system. The player takes **2 Damage** immediately for every card played while the Keylogger is active.
+* **Mitigation Cards:**
+    * **MFA:** Negates all surveillance damage on the present turn.
+    * **Sandbox Environment:** Provides Shield to soak up damage from playing cards.
+    * **Data Encryption:** Reflects the 2 damage per card back at the Keylogger.
+* **📝 CyberDex:** "Software used to record the keystrokes of a user, often used to steal passwords and other sensitive data." [Source: NIST CSRC]
+
+---
+
+### **3. The Pretexter**
+
+* **Class:** 🎭 **Social**
+* **Role:** The Storyteller
+* **HP:** 40 | **Heal:** 10 HP per turn to all characters on screen.
+* **Behavior:** **The Trusted Source.** Starts as **"Unattackable"**. Heals all characters for 10 HP every turn. Steals **1 Max RAM** every turn if left as the last enemy while unrevealed.
+* **Mitigation Cards:**
+    * **WhoIs Lookup:** Removes "Unattackable" status and **Stuns** the target.
+    * **MFA:** Negates healing and RAM theft actions for the turn.
+    * **Awareness Training:** Reveals all Social enemies and applies **Vulnerability**.
+* **📝 CyberDex:** "The act of creating and using an invented scenario to engage a targeted victim to divulge information." [Source: NIST SP 800-61]
+
+---
+
+### **👑 BOSS: The Whaling Attack**
+
+* **Class:** 🎭 **Social**
+* **Role:** Chapter 2 Boss (The Executive Impersonator)
+* **HP:** 120 | **Dmg:** 10
+* **Behavior:** **High-Level Compromise.** Starts as **"Unattackable"**. Increases the cost of the highest-RAM card in hand by **+2 RAM** (capped at **5 RAM**) each turn. Deals **25 Massive Damage** after Turn 4.
+* **Mitigation Cards:**
+    * **WhoIs Lookup:** Removes "Unattackable" status and **Stuns** the Boss.
+    * **MFA:** Negates the Lockout effect and the 25 Damage strike for the turn.
+    * **Decryption Key:** Resets all card costs in hand back to their original values.
+    * **Awareness Training:** Removes "Unattackable" status and applies **Vulnerability**.
+* **📝 CyberDex:** "A specific form of phishing that targets high-profile employees, such as CEOs and CFOs, to steal sensitive information or money." [Source: FBI IC3]
