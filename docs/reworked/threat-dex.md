@@ -1,13 +1,17 @@
-👾 **CyberSect: Threat Database**
+# 👾 **CyberSect: Threat Database**
 
-🔑 **Class Legend**
+## 🔑 **Class Legend**
 
 🦠 **Malware:** Weak vs **Antivirus** (High Damage).
+
 🌐 **Network:** Weak vs **Firewall** (Shields/Filtering).
+
 🎭 **Social:** Weak vs **Scan/Utility** (Analysis).
+
 🔒 **Crypto:** Weak vs **Decryption** (Shield Pierce).
 
-📂 **Chapter 1: The Perimeter (Infiltration)**
+
+## 📂 **Chapter 1: The Perimeter (Infiltration)**
 
 **Theme:** Basic scripts and nuisances.
 
