@@ -50,7 +50,7 @@
 * **Class:** 🦠 **Malware**
 * **Role:** Time Bomb
 * **HP:** 50 | **Dmg:** 0 (Passive) / 20 (Active)
-* **Behavior:** **The Masquerade.** Unattackable by standard cards for 4 turns. On Turn 4, it deals 20 Damage and shuffles 1x **Corrupted File** into your deck.
+* **Behavior:** **The Masquerade.** Unattackable by standard cards. On Turn 4, it deals 20 Damage to the player and on itself then shuffles 1x **Corrupted File** into your deck.
     * **Junk Card:** Corrupted File (Deals 2 damage when played/discarded).
 * **Mitigation Cards (Rookie Suite):**
     * **Signature Match:** The only card capable of damaging the Trojan while it is Masquerading.
