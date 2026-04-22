@@ -175,7 +175,7 @@
     * **Calculated Scaling:** Damage scales based on total bots present (Max 4). 1 Node: 3 Dmg; 4 Nodes: 24 Total Dmg.
     * **Bandwidth Cap:** Maximum of 4 Botnet Nodes can be maintained on screen at once.
 * **Mitigation Strategy (Traffic Control):**
-    * **IP Ban:** Stuns the target to remove its "Sync" contribution for the turn.
+    * **Flood Gate:** Kills all the Botnet on screen.
     * **Packet Filter:** Deletes a 12 HP node and draws 2 cards to find more AOE.
     * **Traffic Throttling:** Uses established Shields to "Shield Bash" bots for 2 RAM.
 * **📝 CyberDex:** "A collection of compromised computers co-opted to perform malicious tasks under remote control." [Source: NIST SP 800-115]
