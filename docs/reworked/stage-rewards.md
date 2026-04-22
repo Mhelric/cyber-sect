@@ -65,7 +65,33 @@ This roadmap outlines the evolution of your deck from the first technical breach
 
 ---
 
-### 📈 **System Rules Recap**
-* **Deck Consistency:** You always carry **10 Unique Cards (20 Total)**.
-* **Hand Management:** Draw **2 cards/turn** up to a **10-card Max Hand**.
-* **Upgrade Limit:** Starter/Common (v3.0), Uncommon (v2.0), Rare (Read-Only).
+## 📂 **Chapter 3: Network Intrusion (Encounter & Unlock Map)**
+
+| Stage | Card Reward (Post-Battle) | Strategy/Purpose |
+| :--- | :--- | :--- |
+| **1** | **Packet Filter** | Essential for managing swarm resources and maintaining card advantage. |
+| **2** | **Force Quit** | Emergency RAM management tool for executing high-cost "Nuke" turns. |
+| **3** | **Packet Sniffer** | Ultimate crowd control for suppressing synchronized botnet attacks. |
+| **4** | **IP Ban** | Massive single-target "finisher" required to burst through Boss HP. |
+| **5** | **System Restore Point** | The final safety net for recovering from high-bandwidth attrition. |
+
+### 🃏 **The "Defense-in-Depth" Suite (Chapter 3 Base)**
+*Acquired upon entering Chapter 3. Swaps psychological defenses for infrastructure hardening.*
+
+| Card Name | Card Type | Rarity | RAM | Effect |
+| :--- | :--- | :--- | :--- | :--- |
+| **Flood Gate** (x2) | Attack | Rare | 3 | Deal **4 Dmg** to ALL. If Network: **12 Dmg to ALL**. |
+| **Traffic Throttling** (x2)| Attack | Common | 2 | Deal damage equal to current **Shield amount**. |
+| **Access Control List** (x2)| Defense | Uncommon | 2 | Gain **12 Shield**. |
+| **Sinkhole** (x2) | Defense | Uncommon | 2 | 10 Dmg. If attacked: **Reflect 100% Damage**. |
+| **VPN Tunnel** (x2) | Defense | Common | 1 | Gain **8 Shield**. **Retain your hand** for next turn. |
+| **Geo-Blocking** (x2) | Defense | Uncommon | 1 | Gain **5 Shield**. If Network: **Reflect 50% Damage**. |
+
+### 🔓 **The Chapter 3 Unlockable Arsenal**
+* **7. Packet Filter [Common]**: 6 Dmg. If Network: **12 Damage + Draw 1 Card**.
+* **8. Force Quit [Starter]**: **Gain 1 RAM**. Lose **3 HP**.
+* **9. Packet Sniffer [Common]**: **Stun ALL targets**. (Total system interrupt).
+* **10. IP Ban [Common]**: 3 RAM. Deal **30 Damage to Network** and **Exhaust**.
+* **11. System Restore Point [Rare]**: 3 RAM. **Heal 30 HP**. Exhaust.
+
+---
