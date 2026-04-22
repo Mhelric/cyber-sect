@@ -281,3 +281,151 @@
 | **Decryption Key** | 2 | Utility | Common | 3 Copies |
 
 ---
+
+## **Defense Suite (Chapter 3 Deck)**
+**Theme:** Infrastructure Security & Traffic Management.  
+**Deck Size:** 22 Cards (11 Unique Types × 2 Copies Each)
+
+---
+
+### **Attack Cards (Execute)**
+
+**1. Flood Gate**
+* **Type:** Attack
+* **Category:** [Specialized] (Target: Network/Malware)
+* **Rarity:** Rare — *Upgrade: Read-Only*
+* **Cost:** 3 RAM
+* **Base Effect:** Deal **4 Damage** to **ALL** enemies. If Network Class: Deal **12 Damage to ALL**.
+* **CyberDex:** "A mechanism to control the volume of traffic allowed into a network segment to prevent saturation." [IETF RFC 4774]
+
+**2. Traffic Throttling**
+* **Type:** Attack
+* **Category:** [General]
+* **Rarity:** Common — *Upgrade: 3 Copies*
+* **Cost:** 2 RAM
+* **Base Effect:** Deal damage equal to current **Shield amount**.
+* **Upgrade Path:**
+    * **v2.0:** Deal Damage (Shield + 5).
+    * **v3.0:** Deal Damage (Shield + 10).
+* **CyberDex:** "The intentional slowing of an internet service by an ISP to regulate network traffic and reduce congestion." [FCC Open Internet]
+
+**3. Packet Filter**
+* **Type:** Attack (Unlock: Stage 1)
+* **Category:** [Specialized] (Target: Network)
+* **Rarity:** Common — *Upgrade: 3 Copies*
+* **Cost:** 1 RAM
+* **Base Effect:** Deal **6 Damage**. If Network Class: Deal **12 Damage** and **Draw 1 Card**.
+* **Upgrade Path:**
+    * **v2.0:** Deal 9 Damage (Bonus: 15 + Draw 1).
+    * **v3.0:** Deal 12 Damage (Bonus: 18 + Draw 1).
+* **CyberDex:** "A firewall technique used to control network access by monitoring outgoing and incoming packets." [NIST SP 800-41]
+
+**4. IP Ban**
+* **Type:** Attack (Unlock: Stage 4)
+* **Category:** [Specialized] (Target: Network)
+* **Rarity:** Common — *Upgrade: 3 Copies*
+* **Cost:** 3 RAM
+* **Base Effect:** Deal **12 Damage**. If Network Class: Deal **30 Damage** and **Exhaust**.
+* **Upgrade Path:**
+    * **v2.0:** Deal 40 Damage to Network.
+    * **v3.0:** Deal 50 Damage to Network.
+* **CyberDex:** "A configuration that prevents a specific IP address or range from accessing a server or network." [NIST SP 800-61]
+
+---
+
+### **Defense Cards (Harden)**
+
+**5. Access Control List (ACL)**
+* **Type:** Defense
+* **Category:** [General]
+* **Rarity:** Uncommon — *Upgrade: 2 Copies*
+* **Cost:** 2 RAM
+* **Base Effect:** Gain **12 Shield**.
+* **Upgrade Path:**
+    * **v2.0:** Gain 18 Shield.
+* **CyberDex:** "A list of permissions attached to an object specifying which users or processes are granted access." [NIST CSRC]
+
+**6. Sinkhole**
+* **Type:** Defense
+* **Category:** [General]
+* **Rarity:** Uncommon — *Upgrade: 2 Copies*
+* **Cost:** 2 RAM
+* **Base Effect:** Deal **10 Damage**. If attacked next turn: **Reflect 100% Damage**.
+* **Upgrade Path:**
+    * **v2.0:** Reflect 150% Damage.
+* **CyberDex:** "A technique to redirect malicious traffic to a specific server for analysis or discarding." [NIST SP 800-115]
+
+**7. VPN Tunnel**
+* **Type:** Defense
+* **Category:** [General]
+* **Rarity:** Common — *Upgrade: 3 Copies*
+* **Cost:** 1 RAM
+* **Base Effect:** Gain **8 Shield**. **Retain your hand** (do not discard) for next turn.
+* **Upgrade Path:**
+    * **v2.0:** Gain 11 Shield.
+    * **v3.0:** Gain 14 Shield.
+* **CyberDex:** "A protected link utilizing tunneling and security controls to provide confidentiality over public networks." [NIST SP 800-77]
+
+**8. Geo-Blocking**
+* **Type:** Defense
+* **Category:** [Specialized] (Target: Network)
+* **Rarity:** Uncommon — *Upgrade: 2 Copies*
+* **Cost:** 1 RAM
+* **Base Effect:** Gain **5 Shield**. If Network Class: **Reflect 50% Damage**.
+* **Upgrade Path:**
+    * **v2.0:** Gain 8 Shield. Reflect 75% Damage.
+* **CyberDex:** "The practice of restricting access to internet content based upon the user's geographical location." [NIST SP 800-53]
+
+---
+
+### **Utility Cards (Patch)**
+
+**9. Packet Sniffer**
+* **Type:** Utility (Unlock: Stage 3)
+* **Category:** [Specialized] (Crowd Control)
+* **Rarity:** Common — *Upgrade: 3 Copies*
+* **Cost:** 2 RAM
+* **Base Effect:** **Stun ALL targets**.
+* **Upgrade Path:**
+    * **v2.0:** Stun ALL & Draw 1 card.
+    * **v3.0:** Stun ALL & Apply 1 Weakness.
+* **CyberDex:** "A tool used to capture and analyze data packets as they flow across a network." [NIST SP 800-94]
+
+**10. Force Quit**
+* **Type:** Utility (Unlock: Stage 2)
+* **Category:** [General]
+* **Rarity:** Starter (Common) — *Upgrade: 3 Copies*
+* **Cost:** 0 RAM
+* **Base Effect:** **Gain 1 RAM**. Lose **3 HP**.
+* **Upgrade Path:**
+    * **v2.0:** Gain 1 RAM. Lose 2 HP.
+    * **v3.0:** Gain 2 RAM. Lose 3 HP.
+* **CyberDex:** "A command used to terminate a program that has become unresponsive or is consuming too many resources."
+
+**11. System Restore Point**
+* **Type:** Utility (Unlock: Stage 5)
+* **Category:** [General]
+* **Rarity:** Rare — *Upgrade: Read-Only*
+* **Cost:** 3 RAM
+* **Base Effect:** **Heal 30 HP**. **Exhaust**.
+* **CyberDex:** "A feature that allows the user to revert the computer's state to that of a previous point in time." [NIST SP 800-34]
+
+---
+
+### **Summary Table for Defense Suite Suite**
+
+| Card Name | Qty in Deck | Card Type | Rarity | Upgrade Rule |
+| :--- | :--- | :--- | :--- | :--- |
+| **Flood Gate** | 2 | Attack | Rare | No Upgrade |
+| **Traffic Throttling**| 2 | Attack | Common | 3 Copies |
+| **Packet Filter** | 2 | Attack | Common | 3 Copies |
+| **IP Ban** | 2 | Attack | Common | 3 Copies |
+| **Access Control List**| 2 | Defense | Uncommon | 2 Copies |
+| **Sinkhole** | 2 | Defense | Uncommon | 2 Copies |
+| **VPN Tunnel** | 2 | Defense | Common | 3 Copies |
+| **Geo-Blocking** | 2 | Defense | Uncommon | 2 Copies |
+| **Packet Sniffer** | 2 | Utility | Common | 3 Copies |
+| **Force Quit** | 2 | Utility | Starter | 3 Copies |
+| **System Restore Pt** | 2 | Utility | Rare | No Upgrade |
+
+---
