@@ -119,7 +119,7 @@
 * **Class:** 🎭 **Social**
 * **Role:** The Storyteller
 * **HP:** 40 | **Heal:** 10 HP per turn to all characters on screen.
-* **Behavior:** **The Trusted Source.** Starts as **"Unattackable"**. Heals all characters for 10 HP every turn. Steals **1 Max RAM** every turn if left as the last enemy while unrevealed.
+* **Behavior:** **The Trusted Source.** Starts as **"Unattackable"**. Heals all characters for 10 HP every turn. Deal 10 HP every turn if left as the last enemy while unrevealed.
 * **Mitigation Cards:**
     * **WhoIs Lookup:** Removes "Unattackable" status and **Stuns** the target.
     * **MFA:** Negates healing and RAM theft actions for the turn.
