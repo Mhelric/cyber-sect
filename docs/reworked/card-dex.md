@@ -1,10 +1,10 @@
 # 👾 **CyberSect: Master Card Library**
 
 ## 🔑 **Class Legend**
-🦠 **Malware:** Weak vs **Antivirus** (High Damage).  
-🌐 **Network:** Weak vs **Firewall** (Shields/Filtering).  
-🎭 **Social:** Weak vs **Scan/Utility** (Analysis).  
-🔒 **Crypto:** Weak vs **Decryption** (Shield Pierce).  
+* 🦠 **Malware:** Weak vs **Antivirus** (High Damage).
+* 🌐 **Network:** Weak vs **Firewall** (Shields/Filtering).
+* 🎭 **Social:** Weak vs **Scan/Utility** (Analysis).
+* 🔒 **Crypto:** Weak vs **Decryption** (Shield Pierce).
 
 ---
 
@@ -60,6 +60,25 @@
 * **Base Effect:** Deal **12 Damage**. If Network: Deal **30 Damage** and **Exhaust**.
 * **Upgrade Path:** v2.0 (40 Dmg to Network) | v3.0 (50 Dmg to Network)
 
+### **25. Heuristic Strike**
+* **Category:** [Specialized] (Malware/Crypto) | **Rarity:** Common | **Cost:** 1 RAM
+* **Base Effect:** Deal 10 Damage. If **Malware/Crypto**: Deal **20 Damage**.
+* **Upgrade Path:** v2.0 (14/24 Dmg) | v3.0 (18/30 Dmg)
+* **CyberDex:** "Analyzing code for suspicious properties (heuristics) rather than exact signature matches." [NIST SP 800-83]
+
+### **26. Quarantine**
+* **Category:** [General] (Containment) | **Rarity:** Uncommon | **Cost:** 1 RAM
+* **Base Effect:** Deal **10 Damage**. **Stun** target for 1 turn. **Exhaust**.
+* **Special:** Triggers **+15 Bonus Damage** (Buffer Overflow) if used on Ransomware during its "Sale" phase.
+* **Upgrade Path:** v2.0 (Cost: 0 RAM)
+* **CyberDex:** "Isolating files to prevent the spread of malicious software." [NIST SP 800-61]
+
+### **35. SQL Injection**
+* **Category:** [General] (Bypass) | **Rarity:** Uncommon | **Cost:** 2 RAM
+* **Base Effect:** Deal **15 Damage**. Stun enemy.
+* **Upgrade Path:** v2.0 (17 Dmg) | v3.0 (20 Dmg)
+* **CyberDex:** "Exploiting backend vulnerabilities to bypass security layers and access data directly." [MITRE T1190]
+
 ---
 
 ## 🛡️ **Defense Cards (Harden)**
@@ -114,6 +133,19 @@
 * **Base Effect:** Gain **5 Shield**. If Network: **Reflect 50% Damage**.
 * **Upgrade Path:** v2.0 (8 Shield, Reflect 100%)
 
+### **22. Honeypot** *(Note: Shares ID with Awareness Training)*
+* **Category:** [General] (Decoy) | **Rarity:** Uncommon | **Cost:** 2 RAM
+* **Base Effect:** Gain **10 Shield**. **Draw 1 Card**.
+* **Upgrade Path:** v2.0 (14 Shield Draw 2)
+* **CyberDex:** "A decoy system designed to attract and analyze potential intruders." [NIST SP 800-83]
+
+### **30. Code Signing**
+* **Category:** [Specialized] (Anti-Tamper) | **Rarity:** Common | **Cost:** 2 RAM
+* **Base Effect:** Gain **12 Shield**. Apply **"Integrity Lock"** to the player for **2 turns**.
+* **Special:** While active, cards cannot be **Locked or Discarded** by enemy effects.
+* **Upgrade Path:** v2.0 (15 Shield) | v3.0 (18 Shield)
+* **CyberDex:** "Digitally signing code to confirm the author and guarantee the integrity of software." [NIST CSRC]
+
 ---
 
 ## 🔧 **Utility Cards (Patch)**
@@ -123,7 +155,7 @@
 * **Base Effect:** **Remove "Invulnerable"** status + **Stun** the target.
 * **Upgrade Path:** v2.0 (Draw 1 Card) | v3.0 (Draw 1 & +1 Energy)
 
-### **22. Awareness Training**
+### **22. Awareness Training** *(Note: Shares ID with Honeypot)*
 * **Category:** [Specialized] (Social) | **Rarity:** Common | **Cost:** 0 RAM
 * **Base Effect:** **Gain 1 Energy**. If Social: **Remove "Invulnerable"** and apply **Vulnerable** to all.
 * **Upgrade Path:** v2.0 (Draw 1 Card) | v3.0 (Draw 1 & +1 Energy)
@@ -138,12 +170,12 @@
 * **Base Effect:** Deal **5 Damage**. **Remove all Lock effects** from cards in hand.
 * **Upgrade Path:** v2.0 (10 Dmg, Remove Shield/Lock) | v3.0 (15 Dmg, Remove Shield/Lock)
 
-### **25. Signature Update**
+### **25. Signature Update** *(Note: Shares ID with Heuristic Strike)*
 * **Category:** [General] | **Rarity:** Rare | **Cost:** 3 RAM
 * **Base Effect:** **Passive: All attacks deal +3 Damage** for the rest of battle.
 * **Upgrade Path:** Read-Only (No Upgrades)
 
-### **26. Packet Sniffer**
+### **26. Packet Sniffer** *(Note: Shares ID with Quarantine)*
 * **Category:** [Crowd Control] | **Rarity:** Common | **Cost:** 2 RAM
 * **Base Effect:** **Stun ALL targets**.
 * **Upgrade Path:** v2.0 (Stun ALL & Draw 1) | v3.0 (Stun ALL & Apply 1 Weakness)
@@ -157,3 +189,21 @@
 * **Category:** [General] | **Rarity:** Rare | **Cost:** 3 RAM
 * **Base Effect:** **Heal 30 HP**. **Exhaust**.
 * **Upgrade Path:** Read-Only (No Upgrades)
+
+### **33. Threat Intelligence**
+* **Category:** [General] (Investigation) | **Rarity:** Common | **Cost:** 1 RAM
+* **Base Effect:** Put vulnerable to enemy **Gain 1 RAM**.
+* **Upgrade Path:** v2.0 (Gain 2 RAM) | v3.0 (Cost 0 ram)
+* **CyberDex:** "Analyzing threat information to provide context for defense decision-making." [NIST SP 800-150]
+
+### **34. Sample Submission**
+* **Category:** [Specialized] (Malware/Crypto) | **Rarity:** Uncommon | **Cost:** 0 RAM
+* **Base Effect:** Deal 5 Damage. If **Malware/Crypto**: **Gain 2 RAM**.
+* **Upgrade Path:** v2.0 (Gain 3 RAM)
+* **CyberDex:** "Sending suspicious files to an authority for automated behavior analysis." [CISA Malware Analysis]
+
+### **43. Privilege Escalation**
+* **Category:** [General] (Override) | **Rarity:** Rare | **Cost:** 0 RAM
+* **Base Effect:** Lose **10 HP**. **Gain 5 RAM**.
+* **Upgrade Path:** Read-Only (No Upgrades)
+* **CyberDex:** "Taking advantage of design flaws to gain elevated access to system resources." [MITRE T1068]
