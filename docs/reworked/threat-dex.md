@@ -154,7 +154,7 @@
 
 * **Class:** 🦠 **Malware**
 * **Stats:** 32 HP (Parent) / 16 HP (Copy) | **Dmg:** 8
-* **Behavior: Recursive Propagation**
+* **Behavior:** **Recursive Propagation.**
     * **Alpha Node:** The larger Parent worm starts as the only threat. As long as it is alive, it is the "Source."
     * **Self-Replication:** At the end of every turn, the Parent summons one **Worm Copy** (up to a maximum of 4 copies on the field).
     * **Source Termination:** Once the Parent is defeated, replication stops. Existing copies remain but can no longer multiply.
@@ -170,7 +170,7 @@
 
 * **Class:** 🌐 **Network**
 * **Stats:** 12 HP | **Dmg:** 3 (+1 per active ally)
-* **Behavior: Sync Attack**
+* **Behavior:** **Sync Attack.**
     * **Networked Strength:** Nodes use a shared protocol to synchronize strikes.
     * **Calculated Scaling:** Damage scales based on total bots present (Max 4). 1 Node: 3 Dmg; 4 Nodes: 24 Total Dmg.
     * **Bandwidth Cap:** Maximum of 4 Botnet Nodes can be maintained on screen at once.
@@ -186,7 +186,7 @@
 
 * **Class:** 🦠 **Malware**
 * **Stats:** 80 HP | **Dmg:** 999 (Instant System Failure)
-* **Behavior: The Dormant Execution**
+* **Behavior:** **The Dormant Execution.**
     * **The Countdown:** A **4-Turn** timer is displayed. If it hits zero, it deals 999 damage.
     * **The Pause Mechanism:** **Every time an Attack Card is used on the Bomb**, the timer pauses and does not decrement that turn.
     * **The Reset:** If a turn passes without taking attack damage, the timer drops by 1.
@@ -202,7 +202,7 @@
 
 * **Class:** 🌐 **Network**
 * **Stats:** 160 HP | **Dmg:** 0 (Indirect)
-* **Behavior: The Mastermind Protocol**
+* **Behavior:** **The Mastermind Protocol.**
     * **Command Latency:** Summons **2 Botnet Nodes** every **3 turns** (Max 4 bots on field).
     * **Encrypted Shielding:** While at least one Botnet Node is active, the Server is **Invulnerable**.
     * **The Vulnerability Window:** **Invulnerable** only drops once all proxies (bots) are cleared.
@@ -212,3 +212,65 @@
     * **IP Ban (Reworked):** The "Assassin" card dealing 30-50 damage to Network classes to burst the 160 HP.
     * **Traffic Throttling:** Converts surviving defense (Shields) into massive offense during the window.
 * **📝 CyberDex:** "A server controlled by an attacker to send commands to systems compromised by malware." [Source: MITRE ATT&CK: T1071]
+
+---
+
+## 📂 **Chapter 4: Advanced Threats (Cryptography & Mutations)**
+
+**Theme:** Resource manipulation, persistent threats, and phase-shifting.
+
+---
+
+### **1. Ransomware**
+
+* **Class:** 🔒 **Crypto**
+* **Role:** The Data Leecher
+* **HP:** 55 | **Dmg:** 10
+* **Behavior:** **Exfiltration & Monetization.**
+    * **The Breach:** Deals 10 Damage at the end of every turn.
+    * **The Exfiltration (Every 2 Turns):** Selects 1 random card in your hand and applies the **"Locked"** status.
+    * **The Sale (Follow-up Turn):** If a **Locked** card remains in your hand at the start of its next turn, it is **Discarded**, and the Ransomware **heals 10 HP**.
+* **Mitigation Strategy (The "Integrity" Defense):**
+    * **Code Signing (Hard Counter):** Gain 12 Shield, apply "Integrity Lock". Prevents the Exfiltration and Sale cycles entirely. Ransomware is weak to verified systems, taking double damage while this is active.
+    * **Quarantine (Burst):** Deal 10 Damage, Stun, Exhaust. If timed to interrupt the "Sale" phase, it causes a Buffer Overflow, dealing an additional 15 Damage as its script crashes.
+    * **Honeypot (Utility):** Deploys a decoy system to absorb attacks and allow you to safely cycle your deck.
+    * **Decryption Key (Recovery):** Safely unlocks a card to prevent the "Sale" from triggering.
+* **Simulation Logic (Cycle Disruption):** The Ransomware is most dangerous during the transition from Exfiltration to Sale. Using a Stun or Decryption Key at this exact moment protects your deck and turns the enemy's strength into a massive HP penalty.
+
+---
+
+### **2. Rootkit**
+
+* **Class:** 🔒 **Crypto**
+* **Role:** The Kernel Hijacker
+* **HP:** 100 | **Dmg:** 12
+* **Behavior:** **System Hooking & Control.**
+    * **Kernel Persistence:** Deals 12 Damage every turn.
+    * **The Takeover (Every 3 Turns):** Gains **30 Shield** and executes its "Hooking" protocol.
+    * **Remote Execution:** All cards in your hand are **Locked** for one turn. The Rootkit then **hijacks your RAM**, playing your cards randomly at your expense until all available RAM is spent.
+    * **Release:** The Lock and hijacking are removed automatically after 1 turn, returning control to you (with 0 RAM remaining).
+* **Mitigation Strategy (The "Kernel-Mode" Defense):**
+    * **Code Signing (Immunity):** Apply "Integrity Lock". If active when the Rootkit attempts The Takeover, the unauthorized hook fails completely—cards remain unlocked, and RAM stays under your control.
+    * **Heuristic Strike (Striker):** Rootkits hide behind standard signatures, making this analysis attack highly effective. Deals a massive 20 Damage per hit.
+    * **Sample Submission (Accelerator):** Provides the extra RAM needed to maintain 100% Code Signing uptime and bank resources.
+    * **Packet Sniffer (Delay):** Stunning the Rootkit on Turn 3 can delay the Hijack for one turn.
+* **Simulation Logic (Preventative Defense):** You must use Sample Submission to accelerate your RAM gain to reach 10 RAM fast, overpowering the 30-Shield wall before the next hijack window. If you reach Turn 3 without Code Signing active, you lose your entire turn and your most valuable resources.
+
+---
+
+### **👑 BOSS: The Polymorphic Engine**
+
+* **Class:** 🔄 **Variable** (Changes every 2 turns)
+* **Role:** Chapter 4 Boss (The Shapeshifter)
+* **HP:** 150 | **Base Dmg:** 15
+* **Behavior:** **Adaptive Mutation & Signature Cycling.** Every 2 turns, the Boss shifts its Class and Gimmick.
+    * **Malware Mode (Turns 1-2):** Executes **Corruptor Protocol**, dealing **2x Damage** (30 Dmg) per turn.
+    * **Social Mode (Turns 3-4):** Executes **Stealth Masquerade**, applying **Invulnerable** to itself.
+    * **Network Mode (Turns 5-6):** Executes **Botnet Propagation**, summoning **2 Botnet Nodes** (12 HP each) at the end of the first turn in the cycle.
+    * **Crypto Mode (Turns 7-8):** Executes **Data Hostage**, applying **"Locked"** to 1 random card. If not decrypted, the card is **removed from hand** after the second turn.
+* **Mitigation Strategy (The "Adaptive" Defense):**
+    * **WhoIs Lookup (Reveal):** Traces true origins during the Social phase to remove Invulnerability and resume your attack.
+    * **Flood Gate (Cleanup):** Most efficient way to handle the Network phase, instantly deleting the 12 HP Botnet Nodes.
+    * **Code Signing (Hard Counter):** Your Master Key. Blocks the Malware phase's 30 Dmg, and its Integrity Lock prevents the Crypto phase from attempting to "Lock" or "Remove" your cards.
+    * **Heuristic Strike (Striker):** Deals heavy damage across all phases except when the Boss is hidden.
+* **Simulation Logic (Phase Management):** The challenge is managing resources across four different battle types. Use VPN Tunnel or ACL to "Retain" specific counter-cards needed for the next fixed phase. Maximize RAM for heavy hits while keeping a defensive counter in reserve to survive the cycle.
