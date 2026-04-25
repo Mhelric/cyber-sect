@@ -95,3 +95,34 @@ This roadmap outlines the evolution of your deck from the first technical breach
 * **11. System Restore Point [Rare]**: 3 RAM. **Heal 30 HP**. Exhaust.
 
 ---
+
+## 📂 **Chapter 4: The Vault (Encounter & Unlock Map)**
+
+| Stage | Card Reward (Post-Battle) | Strategy/Purpose |
+| :--- | :--- | :--- |
+| **1** | **Cold Storage** | Ultimate baseline defense to survive heavy Ransomware bursts. |
+| **2** | **Quarantine** | Tactical containment to trigger Buffer Overflows on "Sale" phases. |
+| **3** | **SQL Injection** | Essential for piercing through the Rootkit's Kernel Hijack shields. |
+| **4** | **Load Balancer** | Long-term RAM sustain to handle the Polymorphic Engine's cycles. |
+| **5** | **Privilege Escalation** | The final high-risk override for forcing turn-one boss deletions. |
+
+### 🃏 **The "Vault" Suite (Chapter 4 Base)**
+*Acquired upon entering Chapter 4. Focuses on encryption-tier attacks and resource generation.*
+
+| Card Name | Card Type | Rarity | RAM | Effect |
+| :--- | :--- | :--- | :--- | :--- |
+| **Heuristic Strike** (x2)| Attack | Common | 1 | 10 Dmg. If **Malware/Crypto**: **20 Damage**. |
+| **Brute Force** (x2) | Attack | Uncommon | 2 | Deal **27 Damage**. Lose **8 HP**. |
+| **Code Signing** (x2) | Defense | Common | 2 | 12 Shield. Apply **Integrity Lock** (2 Turns). |
+| **Honeypot** (x2) | Defense | Uncommon | 2 | Gain **10 Shield** + **Draw 1 Card**. |
+| **Threat Intel** (x2) | Utility | Common | 1 | Apply **Vulnerable**. **Gain 1 RAM**. |
+| **Sample Sub.** (x2) | Utility | Uncommon | 0 | 5 Dmg. If **Malware/Crypto**: **Gain 2 RAM**. |
+
+### 🔓 **The Chapter 4 Unlockable Arsenal**
+* **7. Cold Storage [Rare]**: Gain 20 Shield. (No RAM cost for high protection).
+* **8. Quarantine [Uncommon]**: 10 Dmg + **Stun**. Deals 25 Dmg if Ransomware is "Selling."
+* **9. SQL Injection [Uncommon]**: 15 Dmg + **Stun**. Pierces through Hijack shields.
+* **10. Load Balancer [Rare]**: 20 Shield. Gain **+1 RAM/turn** for 5 turns.
+* **11. Privilege Escalation [Rare]**: Lose 10 HP. **Gain 5 RAM** (0 Cost).
+
+---
