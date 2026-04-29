@@ -69,7 +69,7 @@
 * **Category:** [General] (Containment) | **Rarity:** Uncommon | **Cost:** 2 RAM
 * **Base Effect:** Deal **10 Damage**. **Stun** target for 1 turn. **Exhaust**.
 * **Special:** Triggers **+15 Bonus Damage** if used on Ransomware during its "Sale" phase.
-* **Upgrade Path:** v2.0 (** Deal **20 Damage**)
+* **Upgrade Path:** v2.0 (Deal **20 Damage**)
 
 ### **13. SQL Injection**
 * **Category:** [General] (Bypass) | **Rarity:** Uncommon | **Cost:** 2 RAM
