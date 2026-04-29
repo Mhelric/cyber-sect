@@ -69,7 +69,7 @@
 * **Category:** [General] (Containment) | **Rarity:** Uncommon | **Cost:** 2 RAM
 * **Base Effect:** Deal **10 Damage**. **Stun** target for 1 turn. **Exhaust**.
 * **Special:** Triggers **+15 Bonus Damage** if used on Ransomware during its "Sale" phase.
-* **Upgrade Path:** v2.0 (Cost: 0 RAM)
+* **Upgrade Path:** v2.0 (** Deal **20 Damage**)
 
 ### **13. SQL Injection**
 * **Category:** [General] (Bypass) | **Rarity:** Uncommon | **Cost:** 2 RAM
@@ -123,7 +123,7 @@
 ### **22. Sinkhole**
 * **Category:** [General] | **Rarity:** Uncommon | **Cost:** 2 RAM
 * **Base Effect:** Deal **15 Damage**. If attacked next turn: **Reflect all Damage**.
-* **Upgrade Path:** v2.0 (Cost: 1 RAM)
+* **Upgrade Path:** v2.0 (Deal **25 Damage**)
 
 ### **23. VPN Tunnel**
 * **Category:** [General] | **Rarity:** Common | **Cost:** 1 RAM
@@ -133,7 +133,7 @@
 ### **24. Geo-Blocking**
 * **Category:** [Specialized] (Network) | **Rarity:** Uncommon | **Cost:** 2 RAM
 * **Base Effect:** Gain **5 Shield**. If Network: **Reflect all Damage**.
-* **Upgrade Path:** v2.0 (8 Shield, Cost 1 RAM)
+* **Upgrade Path:** v2.0 (10 Shield)
 
 ### **25. Honeypot**
 * **Category:** [General] (Decoy) | **Rarity:** Uncommon | **Cost:** 2 RAM
